@@ -10,27 +10,44 @@
 </head>
 <body>
     <header>
-        <img class="image-header" src="images/fondo-header1412-570.jpg">
+        <img class="image-header" src="images/BANNER.jpg" alt="banner">
     </header>
     <nav>
         <ul class="nav-list">
-            <li class="nav-home"><a href="index.html">Inicio</a></li>
-            <li>Deporte</li>
-            <li>Mundo</li>
-            <li>Entretenimiento</li>
-            <li>Novedades</li>
-            <li class="nav-suscribe"><a href="suscribite.html">Suscribite</a></li>
+            <li class="nav-menu"><img src="hamburguesa.svg"></li>
+            <li class="nav-flex"><a href="index.html">Inicio</a></li>
+            <li class="nav-flex">Deporte</li>
+            <li class="nav-flex">Mundo</li>
+            <li class="nav-flex">Entretenimiento</li>
+            <li class="nav-flex">Novedades</li>
+            <li class="nav-flex nav-suscribe"><a href="suscribite.html">Suscribite</a></li>
+            <li class="nav-fecha">Sabado 12 de Mayo</li>
         </ul>
     </nav>
     <main class="column">
-        <section class="column-1" class="column-general">
+        <section id="column1" class="column-1" class="column-general">
         </section>
-        <article class="column-2" class="column-general">
+        <article id="column2" class="column-2" class="column-general">
             <form>
-                
+                <fieldset>
+                    <label for="name">Nombre</label>
+                    <input id="name" type="text" name="name">
+                </fieldset>
+                <fieldset>
+                    <label for="surname">Apellido</label>
+                    <input id="surname" type="text" name="surname">
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email">
+                </fieldset>
+                <fieldset>
+                    <label for="pass">Contraseña</label>
+                    <input id="pass" type="password" name="pass">
+                </fieldset>
             </form>
         </article>
-        <aside class="column-3" class="column-general">
+        <aside id="column3" class="column-3" class="column-general">
         </aside>
     </main>
     <footer>
