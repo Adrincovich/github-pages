@@ -209,12 +209,12 @@ input {
 
     .media-column {
         justify-content: center;
-        padding-left: 30px;
+        padding-left: 20px;
     }
 
     .media-image {
-        width: 50%;
-        max-width: 100px;
+        width: 70%;
+        max-width: 80px;
     }
 
 }
