@@ -86,28 +86,55 @@ nav {
 
 #column1 {
     display: none;
-    flex: 10%;
+    flex: 5%;
     background-color:rgb(240, 235, 235);
 }
 
 .column-2 {
     display: inherit;
     flex-flow: inherit;
-    justify-content: center;
+    justify-content:space-around;
     flex: 100%;
     height: auto;
 }
 
 .column-3 {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
     flex: 20%;
     height: auto;
     background-color: rgb(240, 235, 235);
+}
+
+.notices-column-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 300px;
+    margin: 15px;
+    width: 45%;
+    border-top: 1px solid rgb(66, 65, 65);
+}
+
+.ultimas-noticias {
+    display: inherit;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: brown;
+    color: white;
+    font-size: 35px;
 }
 
 /*Estilos Articulo*/
 
 .article-box {
     margin: 10px;
+    margin-bottom: 20px;
     width: 300px;
     height: 400px;
 }
@@ -135,11 +162,11 @@ nav {
     color: black;
 }
 
-.article-box :link {
+.article-box, .notices-column-3, :link {
     text-decoration: none;
 }
 
-.article-box :visited {
+.article-box, .notices-column-3, :visited {
     text-decoration: none;
 }
 
@@ -152,7 +179,6 @@ nav {
     /* flex: 1; */
     height: auto;
 }
-
 
 fieldset {
     width: 400px;
@@ -198,33 +224,70 @@ input {
     #column1 {
         display: flex;
         justify-content: center;
+        margin-top: 10px;
+        margin-left: 10px;
     }
+
     .column-2 {
         flex: 60%;
     }
 
     .media {
+        text-align: center;
         padding: 20px;
     }
 
     .media-column {
-        justify-content: center;
-        padding-left: 20px;
+        display: inherit;
+        flex-direction: column;
     }
 
     .media-image {
         width: 70%;
-        max-width: 80px;
+        max-width: 60px;
     }
 
+    /*Estilos aside*/
+
+    .column-3 {
+        justify-content:center;
+        align-content:flex-start;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .notices-column-3 {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        min-width: 150px;
+        width: 90%;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
+
     /* Estilos NAV*/
+
     .nav-menu {
         display: none;
     }
-    #column1 {
-        display: inherit;
+
+    .media-column {
+        margin-top: 10px;
     }
 }
+
+    /*Estilos aside*/
+/*
+    .column-3 {
+
+
+    .notices-column-3 {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        min-width: 100px;
+        width: 50%;
+        margin: 0px;
+}*/
