@@ -45,7 +45,7 @@ nav {
 
 .nav-list :hover {
     text-decoration: none;
-    olor: rgb(236, 232, 232);
+    color: rgb(236, 232, 232);
 }
 
 .nav-list :visited:hover {
@@ -86,8 +86,8 @@ nav {
 
 #column1 {
     display: none;
-    flex: 20%;
-    background-color: azure;
+    flex: 10%;
+    background-color:rgb(240, 235, 235);
 }
 
 .column-2 {
@@ -98,22 +98,92 @@ nav {
     height: auto;
 }
 
-.article-box {
-    margin: 10px;
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
-}
-
 .column-3 {
     flex: 20%;
     height: auto;
-    background-color: azure;
+    background-color: rgb(240, 235, 235);
+}
+
+/*Estilos Articulo*/
+
+.article-box {
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+}
+
+.article-image {
+    max-width: 100%;
+}
+
+.article-img {
+    width: 300px;
+    height: max-content;
+}
+
+.article-title {
+    font-size: 20px;
+    color: brown;
+    font-weight: bold;
+    margin: 15px 5px;
+}
+
+.article-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    color: black;
+}
+
+.article-box :link {
+    text-decoration: none;
+}
+
+.article-box :visited {
+    text-decoration: none;
+}
+
+/*Estilos formulario*/
+
+.formulario {
+    display: inherit;
+    flex-flow: column wrap;
+    justify-content:space-around;
+    /* flex: 1; */
+    height: auto;
 }
 
 
+fieldset {
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 0px;
+}
 
+label {
+    margin: 5px;
+    font-weight: bold;
+}
 
+input {
+    margin: 5px;
+    width: 350px
+}
+
+.enviar-form {
+    width: 350px;
+    height: 50px;
+    border: none;
+    background-color:rgb(66, 65, 65);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0%;
+    padding: 0%;
+    margin: 5px;
+    border: 1px solid rgb(185, 197, 197);
+}
 
 @media only screen and (min-width: 768px) {
     /* Estilos NAV*/
@@ -126,12 +196,26 @@ nav {
     /*Main*/
 
     #column1 {
-        display: inherit;
+        display: flex;
+        justify-content: center;
     }
     .column-2 {
         flex: 60%;
     }
 
+    .media {
+        padding: 20px;
+    }
+
+    .media-column {
+        justify-content: center;
+        padding-left: 30px;
+    }
+
+    .media-image {
+        width: 50%;
+        max-width: 100px;
+    }
 
 }
 
