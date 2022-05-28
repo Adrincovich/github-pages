@@ -89,7 +89,6 @@ window.addEventListener("load", ()=> {
         }else {
             validaOk(email, "")
             estadoValidaciones.email = true
-            console.log("asd")
         }
     })
 
@@ -132,10 +131,10 @@ window.addEventListener("load", ()=> {
     })
 
     direccion.addEventListener("blur", function () {
-       /* if (direccion.value == ""){
-            validaFalla(direccion, "Campo vacio")
+       if (direccion.value == ""){
+            validaFalla(direccion, "")
             estadoValidaciones.direccion = false
-        }else */if (!validaDir(direccion.value) && direccion.value.length >= 1){
+        }else if (!validaDir(direccion.value) && direccion.value.length >= 1){
             validaFalla(direccion, "Caracteres invalidos, ingresar letras y numeros")
             estadoValidaciones.direccion = false
         }else if (direccion.value.length < 4 && direccion.value.length >= 1){
