@@ -172,17 +172,27 @@ nav {
     flex-flow: column wrap;
     justify-content:flex-start;
     height:max-content;
+    width: 95%;
     margin-top: 10px;
     background-color:rgb(240, 235, 235);
 }
 
 fieldset {
-    width: 100%;
-    box-sizing: border-box;
-    width: 400px;
+    display: inherit;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    justify-content:center;
+    width: 90%;
     padding: 15px, 0px;
     margin: 10px;
     margin-left: 0px;
+}
+
+.fieldset.falla p {
+    display: block;
+    color: red;
+
 }
 
 label {
@@ -192,14 +202,13 @@ label {
 
 input {
     padding: 10px;
-    margin: 5px;
+    margin: 15px 0px;
     width: 100%;
 }
 
 .formulario-clase {
     width: 100%;
     box-sizing: border-box;
-
 }
 
 .enviar-form {
@@ -231,6 +240,7 @@ input {
 }
 
 @media only screen and (min-width: 768px) {
+
     /* Estilos NAV*/
     .nav-menu {
         display: none;
@@ -238,6 +248,7 @@ input {
     .nav-flex {
         display: inherit;
     }
+
     /*Main*/
 
     #column1 {
@@ -285,7 +296,7 @@ input {
 
     .formulario {
         flex-wrap: wrap;
-        width: 80%;
+        width: 90%;
         flex-direction: row;
         justify-content:space-around;
     }
@@ -293,7 +304,8 @@ input {
     fieldset {
         display: inherit;
         flex-wrap: wrap;
-        width: 40%;
+        width: 45%;
+        padding-bottom: 20px;
     }
 }
 
