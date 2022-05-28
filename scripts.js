@@ -33,8 +33,7 @@ window.addEventListener("load", ()=> {
         }else {
             alert("No enviado, verificar campos")
         }
-      });
-
+    });
 
     const estadoValidaciones = {
         name: false,
@@ -47,10 +46,10 @@ window.addEventListener("load", ()=> {
 
 
     name.addEventListener("blur", function () {
-        /*if (name.value == ""){
-            validaFalla(name, "Campo vacio")
+        if (name.value == ""){
+            validaFalla(name, "")
             estadoValidaciones.name = false
-        }else */if (name.value.length < 3 && name.value.length >= 1){
+        }else if (name.value.length < 3 ){
             validaFalla(name, "Ingrese mas de 3 digitos")
             estadoValidaciones.name = false
         }else {
@@ -64,10 +63,10 @@ window.addEventListener("load", ()=> {
     })
 
     surname.addEventListener("blur", function () {
-        /*if (surname.value == ""){
-            validaFalla(surname, "Campo vacio")
+        if (surname.value == ""){
+            validaFalla(surname, "")
             estadoValidaciones.surname = false
-        }else*/ if (surname.value.length < 3 && surname.value.length >= 1){
+        }else if (surname.value.length < 3 ){
             validaFalla(surname, "Ingrese mas de 3 digitos")
             estadoValidaciones.surname = false
         }else {
@@ -81,15 +80,16 @@ window.addEventListener("load", ()=> {
     })
 
     email.addEventListener("blur", function () {
-        /*if (email.value == ""){
-            validaFalla(email, "Campo vacio")
+        if (email.value == ""){
+            validaFalla(email, "")
             estadoValidaciones.email = false
-        }else */if (!validaEmail(email.value) && email.value.length >= 1){
+        }else if (!validaEmail(email.value)){
             validaFalla(email, "El e-mail no es valido")
             estadoValidaciones.email = false
         }else {
             validaOk(email, "")
             estadoValidaciones.email = true
+            console.log("asd")
         }
     })
 
@@ -98,10 +98,10 @@ window.addEventListener("load", ()=> {
     })
 
     pass.addEventListener("blur", function () {
-        /*if (pass.value == ""){
-            validaFalla(pass, "Campo vacio")
+        if (pass.value == ""){
+            validaFalla(pass, "")
             estadoValidaciones.pass = false
-        }else */if (!validaPass(pass.value) && pass.value.length >= 1){
+        }else if (!validaPass(pass.value)){
             validaFalla(pass, "Ingresar al menos 8 caracteres, letras y numeros")
             estadoValidaciones.pass = false
         }else {
@@ -115,11 +115,11 @@ window.addEventListener("load", ()=> {
     })
 
     telefono.addEventListener("blur", function () {
-        /*if (telefono.value == ""){
-            validaFalla(telefono, "Campo vacio")
+        if (telefono.value == ""){
+            validaFalla(telefono, "")
             estadoValidaciones.telefono = false
-        }else*/ if (!validaTel(telefono.value) && telefono.value.length >= 1){
-            validaFalla(telefono, "Caracteres invalidos, ingresar solo numeros")
+        }else if (!validaTel(telefono.value)){
+            validaFalla(telefono, "Ingresar solo numeros, mínimo 7")
             estadoValidaciones.telefono = false
         }else {
             validaOk(telefono, "")
