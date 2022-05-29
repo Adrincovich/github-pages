@@ -19,6 +19,7 @@ header {
 
 nav {
     position: sticky;
+    z-index: 100;
     top: 0px;
     background-color:rgb(66, 65, 65);
 }
@@ -184,6 +185,7 @@ fieldset {
     align-content: center;
     align-self: center;
     justify-content:center;
+    z-index: 50;
     width: 90%;
     padding: 15px, 0px;
     margin: 10px;
@@ -195,7 +197,6 @@ fieldset {
     position: absolute;
     top: 88px;
     color: red;
-
 }
 
 label {
