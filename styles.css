@@ -178,6 +178,7 @@ nav {
 }
 
 fieldset {
+    position: relative;
     display: inherit;
     flex-direction: column;
     align-content: center;
@@ -191,6 +192,8 @@ fieldset {
 
 .fieldset.falla p {
     display: block;
+    position: absolute;
+    top: 88px;
     color: red;
 
 }

@@ -47,7 +47,7 @@ window.addEventListener("load", ()=> {
 
     name.addEventListener("blur", function () {
         if (name.value == ""){
-            validaFalla(name, "")
+            validaFalla(name, "El nombre es requerido")
             estadoValidaciones.name = false
         }else if (name.value.length < 3 ){
             validaFalla(name, "Ingrese mas de 3 digitos")
@@ -64,7 +64,7 @@ window.addEventListener("load", ()=> {
 
     surname.addEventListener("blur", function () {
         if (surname.value == ""){
-            validaFalla(surname, "")
+            validaFalla(surname, "El apellido es requerido")
             estadoValidaciones.surname = false
         }else if (surname.value.length < 3 ){
             validaFalla(surname, "Ingrese mas de 3 digitos")
@@ -81,7 +81,7 @@ window.addEventListener("load", ()=> {
 
     email.addEventListener("blur", function () {
         if (email.value == ""){
-            validaFalla(email, "")
+            validaFalla(email, "El e-mail es requerido")
             estadoValidaciones.email = false
         }else if (!validaEmail(email.value)){
             validaFalla(email, "El e-mail no es valido")
@@ -98,7 +98,7 @@ window.addEventListener("load", ()=> {
 
     pass.addEventListener("blur", function () {
         if (pass.value == ""){
-            validaFalla(pass, "")
+            validaFalla(pass, "La contraseña es requerida")
             estadoValidaciones.pass = false
         }else if (!validaPass(pass.value)){
             validaFalla(pass, "Ingresar al menos 8 caracteres, letras y numeros")
@@ -115,7 +115,7 @@ window.addEventListener("load", ()=> {
 
     telefono.addEventListener("blur", function () {
         if (telefono.value == ""){
-            validaFalla(telefono, "")
+            validaFalla(telefono, "El telefono es requerido")
             estadoValidaciones.telefono = false
         }else if (!validaTel(telefono.value)){
             validaFalla(telefono, "Ingresar solo numeros, mínimo 7")
@@ -132,7 +132,7 @@ window.addEventListener("load", ()=> {
 
     direccion.addEventListener("blur", function () {
        if (direccion.value == ""){
-            validaFalla(direccion, "")
+            validaFalla(direccion, "La direccion es requerida")
             estadoValidaciones.direccion = false
         }else if (!validaDir(direccion.value) && direccion.value.length >= 1){
             validaFalla(direccion, "Caracteres invalidos, ingresar letras y numeros")
