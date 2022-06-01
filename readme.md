@@ -1,3 +1,3 @@
-**Actividad clase 6.**
-Crear pagina de noticias responsive utilizando Flex.
->https://adrincovich.github.io/github-pages/index.html
+**Actividad clase 8.**
+Validacion de formulario con JavaScript.
+>https://adrincovich.github.io/github-pages/suscribite.html

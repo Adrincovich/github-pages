@@ -44,7 +44,6 @@ window.addEventListener("load", ()=> {
         direccion: false,
     }
 
-
     name.addEventListener("blur", function () {
         if (name.value == ""){
             validaFalla(name, "El nombre es requerido")
@@ -184,5 +183,4 @@ window.addEventListener("load", ()=> {
     const validaDir = (direccion) => {
         return /^[A-Za-z0-9\s]+$/g.test(direccion)
     }
-
 })
